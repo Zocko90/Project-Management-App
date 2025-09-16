@@ -10,3 +10,27 @@ projects.db
 
 # Ignore credentials fajlove
 *.json
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+
+# Logs
+*.log
+deadline_cleanup.log
+
+# SQLite databases (ako ne želiš da deliš lokalnu bazu)
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/project files
+.vscode/
+.idea/
+
