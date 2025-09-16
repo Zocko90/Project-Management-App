@@ -1,4 +1,4 @@
-# Project Management App
+# Project Management CLI Application
 
 A simple command-line Project Management application written in Python using SQLite.  
 Manage your projects with CRUD operations, search, filter, sort, and export to CSV.
@@ -22,17 +22,24 @@ Manage your projects with CRUD operations, search, filter, sort, and export to C
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/project-management-app.git
-cd project-management-app
-Usage
+git clone https://github.com/Zocko90/Project-Management-App.git
+cd Project-Management-App
+
+2. Make sure you have Python 3.9+ installed.
+3. Install required packages (if using pandas for CSV export):
+
+pip install pandas
+
+
+##Usage
 
 Run the CLI menu:
-
 python main.py
 
 
-Example interaction:
+##Example Interaction
 
+Add a Project:
 --- Project Management Menu ---
 1. Add Project
 2. List Projects
@@ -46,37 +53,31 @@ Example interaction:
 0. Exit
 Choose an option: 1
 Title: Build Portfolio Website
-Description: Create personal portfolio site with Python projects
+Description: Personal site with Python projects
 Priority (1-5, default 3): 2
 Deadline (YYYY-MM-DD, optional): 2025-09-30
 Project 'Build Portfolio Website' added.
 
+##List Projects:
 
-List projects:
+ID: 8 | Title: Build Portfolio Website | Status: todo | Priority: 2 | Deadline: 2025-09-30
 
-ID:1 | Title: Build Portfolio Website | Status: todo | Priority: 2 | Deadline: 2025-09-30
 
-Screenshots
+##Screenshots / Demo
 
-Menu view:
+Below is a short demo GIF showing the basic usage of the Project Management CLI application:
 
-List view:
+![alt text](demo-1.gif)
 
-Optional GIF demonstrating add/list:
+##Logging
 
-Logging
+All events and errors are logged to app.log for easy tracking and debugging.
 
-All events and errors are logged to app.log.
+Requirements:
+-Python 3.9+
+-SQLite3 (comes pre-installed with Python)
+-pandas (optional, for CSV export)
 
-License
+##License
 
 MIT License
-
-
----
-
-Saveti:  
-1. Dodaj **screenshotove i GIF** u folder `screenshots/` unutar repo.  
-2. GIF može biti **kratak 5–10 sekundi** koji pokazuje kako dodaješ i listuješ projekat.  
-3. README je **potpuno na engleskom** i jasan za portfolio — recruiter odmah vidi da znaš Python, SQLite, CLI, error handling i logging.  
-
