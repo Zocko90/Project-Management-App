@@ -1,0 +1,12 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+
+# Ignore SQLite database (ako ne želiš da šalješ fajl na GitHub)
+projects.db
+
+# Ignore credentials fajlove
+*.json
