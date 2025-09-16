@@ -34,3 +34,8 @@ Thumbs.db
 .vscode/
 .idea/
 
+app.log
+*.db
+
+echo app.log> .gitignore
+echo *.db >> .gitignore
